@@ -1,0 +1,48 @@
+:root{
+    --darkGray:rgb(73, 88, 103);
+    --blueGray:rgb(87, 115, 153);
+    --lightBlue:rgb(189, 213, 234);
+    --white:rgb(247, 247, 255);
+    --orangeRed:rgb(254, 95, 85);
+}
+
+.buttons{
+    margin:auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+     
+}
+
+.submitBtn{
+    margin:0 1rem;
+    color:var(--orangeRed);
+    background-color:var(--white);
+    border:1.8px solid var(--orangeRed);
+    border-radius: 0.1rem;
+    padding:0.3rem 0.5rem;
+    font-size: 1rem;
+}
+
+.submitBtn:hover{
+    color:var(--white);
+    background-color:var(--orangeRed) ;
+    border:1.8px solid var(--white);
+
+}
+
+.chart{
+    width: 80%;
+    height:80vh;
+    margin:auto;
+    margin-top:3rem;
+}
+
+.chartTitle{
+    display: flex;
+    justify-content: center;
+    color:var(--orangeRed);
+    font-size: medium;
+    /* margin:auto; */
+}

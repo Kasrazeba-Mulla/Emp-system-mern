@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Baloo Bhai 2', cursive;
+    box-sizing: border-box;
+}
+
+/* define color variables */
+
+:root{
+    --darkGray:rgb(73, 88, 103);
+    --blueGray:rgb(87, 115, 153);
+    --lightBlue:rgb(189, 213, 234);
+    --white:rgb(247, 247, 255);
+    --orangeRed:rgb(254, 95, 85);
+}
+
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding:0 2rem;
+    background-color:var(--darkGray) ;
+    color:var(--orangeRed);
+    box-shadow:5px 5px 15px black ;
+    
+}
+
+header a{
+    font-size: 1.8rem ;
+    color:var(--orangeRed);
+    text-decoration: none;
+}
+
+nav a{
+    margin:0 2rem;
+    color: var(--lightBlue) ;
+    text-decoration: none;
+    font-size:1.5rem;
+}
+
+nav a:hover{
+    color: var(--blueGray);
+
+}
+
+header .nav-btn {
+    padding:5px;
+    cursor:pointer;
+    background-color: transparent;
+    border:none;
+    outline:none;
+    color:var(--lightBlue);
+    visibility:hidden;
+    opacity:0;
+    font-size: 1.8rem;
+}
+
+#a1{
+    margin-left: 300px;
+}
+
+
+
+
+@media only screen and (max-width: 1024px){
+    header .nav-btn{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #a1{
+        margin-left: 2rem;
+    }
+
+    header nav{
+        position: fixed;
+        top:0;
+        left:0;
+        height:50vh;
+        width:100vw;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        gap:1.5rem;
+        background-color: var(--darkGray);
+        transition: 1s;
+        transform: translateY(-50vh);
+    }
+
+    header .responsive_nav{
+        transform:none;
+        /* cancel transformation and bring it back to the screen */
+       
+    }
+
+   nav .nav-close-btn{
+          position: absolute;
+          top:1.6rem;
+          right:1.6rem;
+    } 
+
+    
+
+}
+

@@ -1,0 +1,30 @@
+:root{
+    --darkGray:rgb(73, 88, 103);
+    --blueGray:rgb(87, 115, 153);
+    --lightBlue:rgb(189, 213, 234);
+    --white:rgb(247, 247, 255);
+    --orangeRed:rgb(254, 95, 85);
+}
+
+
+.noUser{
+    color:var(--darkGray);
+    font-size: medium;
+    text-align:center;
+    margin-top: 5rem;
+    font-size: 1.3rem;
+}
+
+.loadingSpinner{
+    color:var(--orangeRed);
+    font-size: medium;
+    display: flex;
+    justify-content:center;
+}
+
+.centerDiv{
+    width:80%;
+    height:50vh;
+    margin:auto;
+    margin-top: 2rem;
+}

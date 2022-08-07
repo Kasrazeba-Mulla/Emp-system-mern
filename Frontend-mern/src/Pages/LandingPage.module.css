@@ -1,0 +1,146 @@
+:root{
+    --darkGray:rgb(73, 88, 103);
+    --blueGray:rgb(87, 115, 153);
+    --lightBlue:rgb(189, 213, 234);
+    --white:rgb(247, 247, 255);
+    --orangeRed:rgb(254, 95, 85);
+}
+
+.tableDiv{
+    box-sizing: border-box;
+    width:80vw;
+    /* height:80vh; */
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    margin-top:50px;
+    border-radius: 0.7rem;
+    border:3px solid var(--darkGray);
+    background-color: var(--blueGray);
+}
+
+.headingRow{
+   
+    font-size: 2vw;
+    color:var(--lightBlue);
+}
+
+.dataRow{
+    font-size: 1.5vw;
+}
+
+th,td{
+
+    padding:0 5.5rem;
+}
+
+.loadingSpinner{
+    color:var(--orangeRed);
+    font-size: medium;
+    /* margin:auto; */
+    text-align: center;
+    margin-top:13rem;
+}
+
+
+
+@media only screen and (max-width:1200px){
+  
+
+    .headingRow{
+   
+        font-size: 2.8vw;
+    } 
+
+    .dataRow{
+        font-size: 2.1vw;
+    }
+    
+
+
+    th,td{
+
+        padding:0 1.5rem;
+    }
+}
+
+@media only screen and (max-width:900px){
+  
+
+    .headingRow{
+   
+        font-size: 3vw;
+    } 
+    .dataRow{
+        font-size: 2.5vw;
+    }
+    
+}
+
+@media only screen and (max-width:600px){
+    .tableDiv{
+    width:92vw;
+
+    }
+
+    .headingRow{
+   
+        font-size: 4.5vw;
+    }
+
+    th .th1{
+        align-self:center ;
+    }
+
+    .dataRow{
+        font-size: 3.5vw;
+    }
+
+    
+} 
+
+.noUser{
+    color:var(--darkGray);
+    font-size: medium;
+    text-align:center;
+    margin-top: 5rem;
+    font-size: 1.3rem;
+
+}
+
+.submitBtn{
+    margin:0 1rem;
+    color:var(--orangeRed);
+    background-color:var(--white);
+    border:1.8px solid var(--orangeRed);
+    border-radius: 0.1rem;
+    padding:0.3rem 0.5rem;
+    font-size: 1rem;
+}
+
+.submitBtn:hover{
+    color:var(--white);
+    background-color:var(--orangeRed) ;
+    border:1.8px solid var(--white);
+
+}
+
+.table{
+    padding:2rem 1rem;
+    background-color: var(--lightBlue);
+    margin:auto;
+    margin-top:3rem;
+    border: 2px solid var(--darkGray);
+}
+
+.heading{
+    color:var(--darkGray);
+    font-size: large;
+    font-weight: bold;
+}
+
+.data{
+    padding: 12rem 12rem;
+}
